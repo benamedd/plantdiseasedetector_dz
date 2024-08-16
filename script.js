@@ -21,7 +21,7 @@ document.getElementById('loadButton').addEventListener('click', () => {
 document.getElementById('identifyButton').addEventListener('click', async () => {
     if (!model) {
         try {
-           model = await tf.loadLayersModel('./model.json');
+           model = await tf.loadLayersModel('model.json');
         } catch (error) {
             console.error('Error loading model:', error);
             alert('An error occurred while loading the model.');
